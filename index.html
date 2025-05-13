@@ -36,6 +36,9 @@
     .product img {
       width: 100%;
       height: auto;
+      max-width: 300px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
       border-radius: 6px;
     }
     .product input[type='number'] {
@@ -74,21 +77,21 @@
     <form action="https://formspree.io/f/your-form-id" method="POST">
       <div class="product-grid">
         <div class="product">
-          <img src="https://zhixiaoxue.github.io/souvenir-order/images/Fridge_Magnets.jpg" alt="Fridge Magnet">
+          <img src="https://zhixiaoxue.github.io/souvenir-order/images/Fridge_Magnets.jpg" alt="Fridge Magnet" width="300" height="300" loading="lazy">
           <h3>Fridge Magnet</h3>
           <p>10 SAR each</p>
           <label>Quantity: <input type="number" name="magnet_qty" min="0" value="0"></label>
         </div>
 
         <div class="product">
-          <img src="https://zhixiaoxue.github.io/souvenir-order/images/Camel_Figurine.jpg" alt="Camel Figurine">
+          <img src="https://zhixiaoxue.github.io/souvenir-order/images/Camel_Figurine.jpg" alt="Camel Figurine" width="300" height="300" loading="lazy">
           <h3>Camel Figurine (Large)</h3>
           <p>35 SAR</p>
           <label>Quantity: <input type="number" name="camel_qty" min="0" value="0"></label>
         </div>
 
         <div class="product">
-          <img src="https://zhixiaoxue.github.io/souvenir-order/images/Keychain.jpg" alt="Keychain">
+          <img src="https://zhixiaoxue.github.io/souvenir-order/images/Keychain.jpg" alt="Keychain" width="300" height="300" loading="lazy">
           <h3>Keychain</h3>
           <p>5 SAR each</p>
           <label>Quantity: <input type="number" name="keychain_qty" min="0" value="0"></label>
@@ -106,4 +109,3 @@
   </div>
 </body>
 </html>
-
